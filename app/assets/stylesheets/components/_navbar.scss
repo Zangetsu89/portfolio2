@@ -1,12 +1,22 @@
+
 .navbar-lewagon {
   justify-content: space-between;
-  background: white;
+  background: rgba(0, 0, 0, 0.1);
+  height: 150px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.nav-item {
+  padding: 0 20px ;
+}
+
+.nav-link {
+  color: white !important;
+  font-family:'Orbitron', sans-serif;
 }
