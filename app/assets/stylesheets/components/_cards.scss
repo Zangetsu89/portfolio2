@@ -1,0 +1,32 @@
+.my-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 10px auto;
+  grid-gap: 10px;
+}
+.left-grid {
+  border: 3px solid #1f1f23;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100% );
+}
+
+.left-grid-pic1 {
+  margin: 10px 0;
+}
+
+.right-grid {
+  padding-top: 10px;
+  border: 1px solid black;
+  background-color: #6874E7;
+}
+
+.right-grid h2 {
+  text-align: left;
+  padding-left: 10px;
+}
+.right-grid-p {
+ color: #DCCDBC;
+ padding: 30px;
+  background-color: #1f1f23;
+  border-top: 5px solid #DCCDBC;
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 35%);
+}
