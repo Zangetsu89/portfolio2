@@ -1,22 +1,26 @@
 .my-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 400px 1fr;
   margin: 10px auto;
   grid-gap: 10px;
 }
 .left-grid {
-  border: 3px solid #1f1f23;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100% );
+  border: 3px solid #27272c;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 100%);
+  // &:hover {
+  //   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  // }
 }
 
 .left-grid-pic1 {
-  margin: 10px 0;
+  margin: 10px auto;
+  padding: 10px;
 }
 
 .right-grid {
-  padding-top: 10px;
-  border: 1px solid black;
+  padding-top: 15px;
   background-color: #6874E7;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0 83%, 0 100%);
 }
 
 .right-grid h2 {
@@ -26,7 +30,8 @@
 .right-grid-p {
  color: #DCCDBC;
  padding: 30px;
-  background-color: #1f1f23;
+  background-color: #423E3B;
   border-top: 5px solid #DCCDBC;
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 35%);
+  word-spacing: 5px;
 }
