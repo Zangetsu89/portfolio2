@@ -1,0 +1,15 @@
+.my-grid {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  margin: 10px auto;
+  grid-gap: 10px;
+  padding: 0;
+}
+
+.my-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  margin: 10px auto;
+  grid-gap: 10px;
+  padding: 0;
+}

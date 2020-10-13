@@ -5,16 +5,13 @@
     <p><span><i class="fas fa-quote-left"></i></span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam qui exercitationem deleniti ab consectetur iusto vero maiores, explicabo dolor commodi <span><i class="fas fa-quote-right"></i></span> "Quote"</p>
     <br>
   <div>
-    <%= link_to "Discover me", "#", class: "bttn bttn1" %>
+  <%= link_to "Check it out", "#", class: "test test1"%>
   </div>
   <div>
   <%= form_tag root_path, class: "banner-search d-flex", method: :get do %>
             <%= text_field_tag :query, params[:query], class: " feast-search", placeholder: "What do you wanna know?" %>
             <%= button_tag "", class: "button-search" %>
 <% end %>
-<div>
-    <%= link_to "Discover me", "#", class: "test test1" %>
-  </div>
-  </div>
+</div>
 </div>
 </div>
