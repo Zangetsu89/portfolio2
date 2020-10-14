@@ -53,16 +53,20 @@
 }
 
 .left-card h2 {
+  text-align: center;
   padding-bottom: 10px;
 }
 
-.left-card-p {
-  padding: 10px 20px;
-  border: 2px solid black;
-  text-align: left;
-  margin-bottom: 30px;
-  box-shadow: 0px 2px 13px -3px rgba(0,0,0,0.75);
-  background-color: #eef7ee;
+.left-card-link {
+  text-align: center;
+}
+
+.left-card h2::after {
+  content: "\f542";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  margin: 10px;
+  font-size: 26px;
 }
 
 .left-card p {
@@ -75,4 +79,70 @@
 
 .left-card-p span {
   color: black;
+}
+
+.left-card-p {
+  padding: 10px 20px;
+  border: 2px solid black;
+  text-align: left;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 13px -3px rgba(0,0,0,0.75);
+  background-color: #eef7ee;
+  position: relative;
+}
+
+.left-card-p:hover::before {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  border: 5px solid #50514F;
+  z-index: 10;
+  width: 100%;
+  clip-path: polygon(100% 0%, 100% 0%, 100% 0%);
+  animation-name: borderRotation;
+  animation-duration: 1800ms;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.left-card-p:hover::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  border: 5px solid #b4b4b4;
+  z-index: 10;
+  width: 100%;
+  color: rgb(122, 122, 122);
+  clip-path: polygon(0% 100%, 0% -100%, 200% 100%);
+  animation-name: borderAfter;
+  animation-direction: alternate;
+  animation-duration: 1800ms;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@keyframes borderRotation {
+  0% {
+      clip-path:polygon(50% 100%, 0% 100%, 0% 100%)
+  }
+  100% {
+    clip-path: polygon(50% 100%, 0% -100%, 200% 100%);
+  }
+}
+
+@keyframes borderAfter {
+  0% {
+    clip-path:polygon(50% 100%, 0% 100%, 0% 100%)
+  }
+  100% {
+    clip-path: polygon(50% 100%, 0% -100%, 200% 100%);
+  }
 }

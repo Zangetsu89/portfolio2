@@ -1,16 +1,64 @@
-<div>
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+<%# <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div>
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <%= link_to "My story", "#", class: "nav-link" %>
+        <%= link_to "My story", "#", class: "nav-link"
       </li>
       <li class="nav-item">
-        <%= link_to "My work", "#", class: "nav-link" %>
+        <%= link_to "My work", "#", class: "nav-link"
       </li>
       <li class="nav-item">
-        <%= link_to "Challenge me", "#", class: "nav-link" %>
+        <%= link_to "Challenge me", "#", class: "nav-link" 
       </li>
     </ul>
   </div>
+</div> %>
+<svg>
+  <defs>
+    <clipPath id="clipPath">
+      <circle class="one" cx="200" cy="400" r="1300" transform="scale(0)"/>
+      <circle class="two" cx="-2200" cy="1900" r="800" transform="scale(0)"/>
+    </clipPath>
+  </defs>
+</svg>
+
+<button id="open"></button>
+<div class="wrapper">
+  <nav>
+    <ul>
+      <li><a href="#">My story</a></li>
+      <li><a href="#">Previous experience</a></li>
+      <li><a href="#">Challenge me</a></li>
+      <%# <li><a href="#">D</a></li> %>
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, fugiat!</p>
+  </nav>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+<script>
+  var tl = new TimelineMax({paused:true});
+
+  document.getElementById('open').addEventListener('click',() => {
+    this.tl.play();
+  })
+
+  tl.from("nav", 1, {
+    x: 300,
+    display:'none',
+    ease: Power2.easeOut,
+    delay: 0
+  });
+
+  tl.to("circle.one", 3,{
+    scale: 1,
+    x: 0,
+    y: -1300,
+    ease: Power2.easeOut
+  }, "-=1");
+  tl.to("circle.two", 4,{
+    scale: 1.8,
+    x: 2900,
+    y: -500,
+    ease: Power2.easeOut
+  }, "-=3");
+</script>
