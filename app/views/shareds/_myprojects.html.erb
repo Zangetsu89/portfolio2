@@ -3,15 +3,17 @@
     <h2>My Projects</h2>
     <h4>Moveable Feasts</h4>
     <div class="left-card-p">
-     <p>More than 5 years ago I came to the Netherlands from Istanbul where I lived for almost 3 years. I come from Alepp, Syria. I left Aleppo after a month of the begining of the war there.<br>I worked the past 12 years in Hospitality industry within the most luxiours hotel brands such as Sheraton, W hotels and IHG chain.<br>Later in 2019 I made the decision to do a career switch to Web Development as I was fascinated by the systems and IT in general, so I started self styding from SEP 2019 alongside a full time job and then fulltime self studying since the begining of 2020 till mid July where I started the intensive coding bootcamp with Le Wagon, which I proudly completed end of SEP 2020 to become a fully qualified Full-Stack Developer.</p>
+     <p><span>Moveable Feasts</span> was my graduation project which aims to pair ex-pats, recently moved people, or immigrants with hosts for dinner parties. This app acts as a new social connector for hosts and guests to create frienships in more intimate settings.<br>This app was created on the base of the <span>MVC pattern</span> and the coding languages that are used are: <span>HTML5, SASS, JavaScript, Ruby as a backend language using Ruby on Rails framework and SQL for the Database using Active Record library. The maps used are from Mapbox, Cloudinary was used to save the uploaded images and of course the fonts used are from Google fonts</span></p>
     </div>
     <div>
-    <%= link_to "Check it out", "#", class: "bttn bttn1" %>
+    <%= link_to "Check it out", "https://www.moveablefeasts.club/", class: "bttn bttn1", target: "_blank" %>
   </div>
   </div>
   <div class="right-grid-img">
     <div class="grid-img">
-      <%= image_tag "hicke.JPG", width: "370px" %>
+    <%= link_to "https://www.moveablefeasts.club/", target: "_blank" do %>
+      <%= image_tag "MF.PNG", width: "370px", height: "450px" %>
+    <% end %>
     </div>
   </div>
 </div>
