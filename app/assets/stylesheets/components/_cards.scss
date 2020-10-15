@@ -61,6 +61,7 @@
 
 .left-card-link {
   text-align: center;
+  margin-top: 50px;
 }
 
 .left-card h2::after {
@@ -82,6 +83,7 @@
 
 .left-card-p span {
   color: black;
+  font-weight: bold;
 }
 
 .left-card-p {
@@ -92,17 +94,19 @@
   box-shadow: 0px 2px 13px -3px rgba(0,0,0,0.75);
   background-color: #eef7ee;
   position: relative;
+  word-spacing: 5px;
+  letter-spacing: 1px;
   transform: translate3d(1.70424px, 19.7267px, 0px);
 }
 
-.left-card-p:hover::before {
+.left-card-p::before {
   pointer-events: none;
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   height: 100%;
-  border: 5px solid green;
+  border: 2px solid #6874E7;
   z-index: 10;
   width: 100%;
   clip-path: polygon(0% 0%, 0% 0%, 0% 0%);
@@ -114,50 +118,49 @@
   animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.left-card-p:hover::after {
+.left-card-p::after {
   pointer-events: none;
   content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   height: 100%;
-  border: 5px solid red;
+  border: 5px solid #F4F4F4;
   z-index: 10;
   width: 100%;
   color: rgb(122, 122, 122);
   clip-path: polygon(0% 0%, 0% 0%, 0% 0%);
   animation-name: borderAfter;
-  animation-direction: alternate;
+  animation-direction: normal;
   animation-duration: 1800ms;
-  animation-fill-mode: backwards;
-  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+  animation-delay: 150ms;
   animation-iteration-count: infinite;
   animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 @keyframes borderRotation {
-  0%{
-      clip-path:polygon(0% 100%, 0% 100%, 0% 100%);
+  0% {
+    clip-path:polygon(100% 0%, 100% 400%, 500% 0%, 0% -100%);
   }
-  // 25% {
-  //   polygon(100% 0%, 100% 200%, -100% 0%)
-  // }
-  // 50%{  polygon(100% 0%, 100% 0%, 100% 0%)
-
-  // }
-  // 75% {
-
-  // }
+  75% {
+    border: 4px solid #6874E7;
+  }
   100% {
-    clip-path: polygon(0% 100%, 0% -100%, 200% 100%);
+    clip-path: polygon(0% 100%, 400% -500%, 0% 0%, -100% -100%);
+    border: 4px solid #6874E7;
   }
 }
 
-// @keyframes borderAfter {
-//   0% {
-//     clip-path:polygon(100% 0%, 100% 200%, -100% 0%);
-//   }
-//   100% {
-//     clip-path: polygon(100% 0%, 100% 0%, 100% 0%);
-//   }
-// }
+@keyframes borderAfter {
+  0% {
+    clip-path:polygon(100% 0%, 100% 400%, 500% 0%, 0% -100%);
+  }
+  75% {
+    border: 5px solid #F4F4F4;
+  }
+  100% {
+    clip-path: polygon(0% 100%, 400% -500%, 0% 0%, -100% -100%);
+    border: 6px solid #F4F4F4;
+  }
+}
