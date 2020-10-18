@@ -4,7 +4,7 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0 83%, 0 100%);
 }
 
-.right-card h2 {
+.right-card h2, .right-card h4 {
   text-align: left;
   padding-left: 20px;
 }
@@ -72,6 +72,21 @@
   font-size: 26px;
 }
 
+.icons i{
+  font-size: 30px;
+}
+
+.fa-html5 {
+  color: #e34c26;
+}
+
+.fa-css3-alt {
+  color: #146eb0;
+}
+
+.fa-js {
+  color: #f0db4f;
+}
 .left-card p {
   color: #696969;
 }
@@ -163,4 +178,37 @@
     clip-path: polygon(0% 100%, 400% -500%, 0% 0%, -100% -100%);
     border: 6px solid #F4F4F4;
   }
+}
+
+.project-right-card {
+  background-color: #686767;
+  position: relative;
+  border: none;
+  
+}
+.project-right-card h4 {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.project-right-card2 {
+  background-color: #dfc9a0;
+  clip-path: polygon(1% 1%, 100% 0, 0% 300%);
+  z-index: 10;
+  height: 500px;
+  z-index: 1;
+  border-bottom-right-radius: 650px;
+}
+.project-right-card3 {
+  background-color: #eef7ee;
+  clip-path: polygon(0 0, 100% 0, 0% 150%);
+  height: 500px;
+  z-index: 1;
+}
+.project-right-card p {
+  padding: 10px; 
+  position: absolute;
+  background-color: #eef7ee;
+  z-index: 100;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  width: 500px;
 }
