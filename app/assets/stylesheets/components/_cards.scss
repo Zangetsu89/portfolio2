@@ -1,3 +1,13 @@
+.projects-header h2{
+  text-align: center;
+  padding: 10px;
+
+}
+
+.projects-header{
+ padding: 0px;
+}
+
 .right-card {
   padding-top: 15px;
   background-color: #6874E7;
@@ -52,19 +62,18 @@
 
 .left-card {
   padding-top: 15px;
-}
+  position: relative;
+  z-index: 100;
 
-.left-card h2 {
-  text-align: center;
-  padding-bottom: 10px;
 }
 
 .left-card-link {
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 20px;
 }
 
-.left-card h2::after {
+.projects-header h2::after {
   content: "\f542";
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
@@ -88,7 +97,8 @@
   color: #f0db4f;
 }
 .left-card p {
-  color: #696969;
+  color: #423E3B;
+  font-weight: bold;
 }
 
 .left-card h4 {
@@ -96,22 +106,25 @@
   padding-left: 20px;
 }
 
-.left-card-p span {
-  color: black;
-  font-weight: bold;
-}
-
 .left-card-p {
-  padding: 10px 20px;
-  border: 2px solid black;
+  padding: 10px 40px;
+  width: 100%;
   text-align: left;
   margin-bottom: 30px;
-  box-shadow: 0px 2px 13px -3px rgba(0,0,0,0.75);
-  background-color: #eef7ee;
   position: relative;
   word-spacing: 5px;
   letter-spacing: 1px;
   transform: translate3d(1.70424px, 19.7267px, 0px);
+
+}
+
+.exclude {
+  position: absolute;
+  top: -59px;
+  right: -12px;
+  box-shadow: none;
+  width: 100%;
+  height: 100%;
 }
 
 .left-card-p::before {
@@ -170,18 +183,19 @@
 @keyframes borderAfter {
   0% {
     clip-path:polygon(100% 0%, 100% 400%, 500% 0%, 0% -100%);
+    
   }
   75% {
-    border: 5px solid #F4F4F4;
+    border: 5px solid #F0FFF1;
   }
   100% {
     clip-path: polygon(0% 100%, 400% -500%, 0% 0%, -100% -100%);
-    border: 6px solid #F4F4F4;
+    border: 6px solid #F0FFF1;
   }
 }
 
 .project-right-card {
-  background-color: #686767;
+  background-color: #423E3B;
   position: relative;
   border: none;
   
@@ -191,8 +205,8 @@
   padding-left: 10px;
 }
 .project-right-card2 {
-  background-color: #dfc9a0;
-  clip-path: polygon(1% 1%, 100% 0, 0% 300%);
+  background-color: #6874E7;
+  clip-path: polygon(0% 0%, 100% 0, 0% 300%);
   z-index: 10;
   height: 500px;
   z-index: 1;
@@ -200,9 +214,17 @@
 }
 .project-right-card3 {
   background-color: #eef7ee;
-  clip-path: polygon(0 0, 100% 0, 0% 150%);
+  clip-path: polygon(0 1%, 100% 0, 0% 150%);
   height: 500px;
   z-index: 1;
+}
+
+.project-right-card3 h4::after {
+  content: "\f02d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  margin: 10px;
+  font-size: 26px;
 }
 .project-right-card p {
   padding: 10px; 
@@ -211,4 +233,17 @@
   z-index: 100;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   width: 500px;
+  position: relative;
+}
+
+@media(max-width: 992px) {
+  .my-grid, .my-grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .my-grid, .my-grid2 {
+    grid-template-columns: 1fr;
+  }
 }

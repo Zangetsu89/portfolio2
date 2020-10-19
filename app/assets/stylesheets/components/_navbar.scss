@@ -31,17 +31,19 @@ svg{
 .wrapper {
   position: relative;
   // overflow: hidden;
+  top: 90px;
+  right: 0;
   nav {
     width: 12.5%;
     float: right;
     background-color:#6874E7;
-    height: calc(100vh - 3.4em);
+    height: calc(88vh - 3.4em);
     font-size: 1.4em;
     line-height: 1.5em;
     color: black;
     padding: 20px;
     clip-path: url('#clipPath');
-    overflow: hidden;
+    // overflow: hidden;
     ul {
       list-style: none;
       padding: 0;
