@@ -1,11 +1,7 @@
-.projects-header h2{
+.projects-background h2{
   text-align: center;
   padding: 10px;
 
-}
-
-.projects-header{
- padding: 0px;
 }
 
 .right-card {
@@ -73,7 +69,7 @@
   margin-bottom: 20px;
 }
 
-.projects-header h2::after {
+.projects-background h2::after {
   content: "\f542";
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
