@@ -1,17 +1,3 @@
-.projects-background2 h2{
-  text-align: center;
-  color: #D5DAEB;
-  padding: 30px 0;
-  background-color: #373533;
-  &::after {
-  content: "\f542";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 700;
-  margin: 10px;
-  font-size: 26px;
-}
-}
-
 .right-card {
   padding-top: 15px;
   background-color: #6874E7;
@@ -44,6 +30,11 @@
   font-size: 14px;
 }
 
+.story-strong {
+  font-weight: bold;
+  color: #6874E7;
+}
+
 .right-card-p::after, .right-card-p::before {
   position: absolute;
   content: "";
@@ -62,6 +53,20 @@
 .right-card-p::after {
   left: 50%;
   transform: skew(0, 30deg);
+}
+
+.projects-background2 h2{
+  text-align: center;
+  color: #D5DAEB;
+  padding: 30px 0;
+  background-color: #373533;
+  &::after {
+  content: "\f542";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  margin: 10px;
+  font-size: 26px;
+}
 }
 
 .left-card {
