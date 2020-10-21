@@ -3,12 +3,12 @@
 }
 
 .homepage-banner {
-  background-image:linear-gradient(135deg, rgba(0,0,0,0.1)0%, rgba(0,0,0,0.1)0%), url(https://res.cloudinary.com/dzvurrjbc/image/upload/v1600769468/man-standing-on-a-rock-1271619_eh8s6b.jpg);
+  // background-image:linear-gradient(135deg, rgba(0,0,0,0.1)0%, rgba(0,0,0,0.1)0%), url(https://res.cloudinary.com/dzvurrjbc/image/upload/v1600769468/man-standing-on-a-rock-1271619_eh8s6b.jpg);
+  background: linear-gradient(180deg, #6874E7 0%, #000000 100%), #6874E7;
   width: 100%;
   height: 90vh;
   background-size: cover;
-  
-  
+  position: relative;
 }
 
 .homepage-banner h1 {
@@ -19,6 +19,11 @@
   transition: 0.1s;
   padding-top: 80px;
   padding-bottom: 20px;
+  // color: #6874E7;
+}
+
+.homepage-banner h3 {
+  margin: 50px 0;
 }
 
 .essam {
@@ -33,3 +38,9 @@
   font-size: 16px;
   padding: 20px 0;
 }
+
+// .crosses img {
+//   width: 50px;
+  
+// }
+

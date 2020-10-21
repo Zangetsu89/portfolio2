@@ -5,13 +5,29 @@
     <h3>Full-Stack Web Developer</h3>
     <br>
   <div>
-  <%= link_to "Check it out", "#", class: "test test1"%>
+  <%= link_to "Check it out", "#", class: "hexagon"%>
   </div>
-  <div>
-  <%= form_tag root_path, class: "banner-search d-flex", method: :get do %>
-            <%= text_field_tag :query, params[:query], class: " feast-search", placeholder: "What do you wanna know?" %>
-            <%= button_tag "", class: "button-search" %>
-<% end %>
-</div>
+
+  <div class="crosses">
+    <%= image_tag "cross.svg", class: "img1" %>
+    <%= image_tag "cross.svg", class: "img2" %>
+    <%= image_tag "cross.svg", class: "img3" %>
+    <%= image_tag "cross.svg", class: "img4" %>
+    <%= image_tag "cross.svg", class: "img5" %>
+    <%= image_tag "cross.svg", class: "img6" %>
+    <%= image_tag "cross.svg", class: "img7" %>
+    <%= image_tag "TR.svg", class: "img8" %>
+    <%= image_tag "TR.svg", class: "img9" %>
+    <%= image_tag "TR.svg", class: "img10" %>
+    <%= image_tag "TR.svg", class: "img11" %>
+    <%= image_tag "TR.svg", class: "img12" %>
+    <%= image_tag "atom.svg", class: "img13" %>
+  </div>
+  <%# <div>
+  <%= form_tag root_path, class: "banner-search d-flex", method: :get do 
+            <%= text_field_tag :query, params[:query], class: " feast-search", placeholder: "What do you wanna know?" 
+            <%= button_tag "", class: "button-search" 
+<% end 
+</div> %>
 </div>
 </div>

@@ -36,7 +36,7 @@ svg{
   nav {
     width: 12.5%;
     float: right;
-    background-color:#6874E7;
+    background-color:black;
     height: calc(88vh - 3.4em);
     font-size: 1.4em;
     line-height: 1.5em;
@@ -49,14 +49,14 @@ svg{
       padding: 0;
     
       li a {
-        color: black;
+        color: #696969;
         text-decoration: none;
         display: block;
         padding: 1rem 0;
         font-weight: bold;
         border-bottom: 3px solid black;
         &:hover {
-          color: #696969;
+          color: #bbb6b6;
         }
       }
     }
