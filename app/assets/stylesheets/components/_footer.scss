@@ -1,0 +1,44 @@
+.contacts {
+  padding: 20px 0;
+}
+
+.footer-header {
+  border-bottom: 3px solid #6874E7;
+}
+
+.contacts h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.contacts ul {
+  display: flex;
+  justify-content: space-around;
+}
+.contacts ul li {
+  list-style: none; 
+}
+
+.email, .github, .linkedin {
+  font-size: 20px;
+}
+
+.email::before {
+  content: "\f0e0";
+  font-family: "Font Awesome 5 Free";
+  color: #6874E7;
+  font-size: 20px;
+}
+
+.github::before {
+  content: "\f092";
+  font-family: "Font Awesome 5 Free";
+  color: #6874E7;
+  font-size: 20px;
+}
+
+.linkedin::before {
+  content: "\f0e1";
+  font-family: "Font Awesome 5 Free";
+  color: #6874E7;
+  font-size: 20px;
+}
