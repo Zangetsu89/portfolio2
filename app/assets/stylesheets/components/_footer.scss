@@ -8,37 +8,60 @@
 
 .contacts h2 {
   text-align: center;
-  padding-bottom: 20px;
+  padding: 30px 0;
 }
-.contacts ul {
+.footer-titles ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  padding: 0;
 }
-.contacts ul li {
-  list-style: none; 
+
+.footer-titles ul li {
+  list-style: none;
+  font-size: 20px;
+}
+
+.fa-envelope, .fa-github-square, .fa-linkedin {
+  font-size: 20px;
+  color: #6874E7;
+}
+
+.footer-details ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
 }
 
 .email, .github, .linkedin {
-  font-size: 20px;
+ list-style: none;
+  font-size: 16px;
+  margin: 0 10px;
 }
 
-.email::before {
-  content: "\f0e0";
-  font-family: "Font Awesome 5 Free";
-  color: #6874E7;
-  font-size: 20px;
+.footer-details a {
+  text-decoration: none;
+  color: #D5DAEB;
+  &:hover {
+    opacity: 0.7;
+    color: #D5DAEB;
+  }
 }
 
-.github::before {
-  content: "\f092";
-  font-family: "Font Awesome 5 Free";
-  color: #6874E7;
-  font-size: 20px;
-}
-
-.linkedin::before {
-  content: "\f0e1";
-  font-family: "Font Awesome 5 Free";
-  color: #6874E7;
-  font-size: 20px;
-}
+@media(max-width: 520px) {
+  .footer-titles ul li {
+    font-size: 14px;
+    
+  }
+  .fa-envelope, .fa-github-square, .fa-linkedin {
+    font-size: 12px;
+  }
+  .footer-details {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .email, .github, .linkedin {
+    font-size: 10px;
+  }
+ }

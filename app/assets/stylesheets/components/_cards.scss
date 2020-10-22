@@ -18,12 +18,13 @@
 }
 
 .right-card-p {
-  color: #F0FFF1;
+  color: #D5DAEB;
   padding: 40px;
   background-color: #423E3B;
   border-top: 5px solid  #D5DAEB;
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
   word-spacing: 5px;
+  letter-spacing: 1px;
   position: relative;
   overflow: hidden;
   z-index: 2;
@@ -100,7 +101,7 @@
 
 .left-card p {
   color: #D5DAEB;
-  font-weight: bold;
+  
 }
 
 .left-card h4 {
@@ -228,14 +229,16 @@
   position: relative;
 }
 
-@media(max-width: 992px) {
-  .my-grid, .my-grid2 {
-    grid-template-columns: 1fr;
+@media(max-width: 520px) {
+  .right-card-p {
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 50px;
   }
-}
-
-@media(max-width: 768px) {
-  .my-grid, .my-grid2 {
-    grid-template-columns: 1fr;
+  .left-card-p {
+    padding-right: 20px;
+  }
+  .project-right-card {
+    width: 375px;
   }
 }

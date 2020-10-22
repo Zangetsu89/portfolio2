@@ -44,3 +44,20 @@
   
 // }
 
+@media(max-width: 1024px) {
+  .homepage-banner {
+    // height: 70vh;
+  }
+}
+
+@media(max-width: 768px) {
+  .homepage-banner {
+    // height: 65vh;
+  }
+}
+
+@media(max-width: 520px) {
+  .homepage-banner h1 {
+    font-size: 40px;
+  }
+}

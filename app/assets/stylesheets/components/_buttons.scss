@@ -53,3 +53,9 @@
     color: #6874E7;
   }
 }
+
+@media(max-width: 520px) {
+  .hexagon {
+    padding: 20px;
+  }
+}

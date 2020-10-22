@@ -259,3 +259,82 @@
   bottom: 0;
   left: 10px;
 }
+
+@media(max-width: 768px) {
+  .grid-img {
+    text-align: center;
+  }
+  .contact-img {
+    bottom: 50px;
+    left: -20px;
+  }
+  .img3, .img4 {
+  bottom: 150px;
+  left: 200px;
+  }
+  .img6 {
+  bottom: 150px;
+  right: 100px;
+  }
+  .img8, .img9 {
+    bottom: 50px;
+    right: 230px;
+  }
+  .img10, .img11, .img12 {
+    bottom: 20px;
+    left: 330px;
+  }
+  .exclude {
+    top: -15px;
+    right: -12px;
+  }
+}
+
+@media(max-width: 1100px) {
+  .contact-img {
+    bottom: 50px;
+    left: -20px;
+  }
+  .img3, .img4 {
+  bottom: 180px;
+  left: 230px;
+  }
+  .img6 {
+  bottom: 150px;
+  right: 120px;
+  }
+  .img8, .img9 {
+    bottom: 50px;
+    right: 260px;
+  }
+  .img10, .img11, .img12 {
+    bottom: 50px;
+    left: 470px;
+  }
+  .exclude {
+    top: -92px;
+    right: -15px;
+  }
+}
+
+@media(max-width: 520px) {
+  .grid-img img{
+    width: 340px;
+  }
+  .book-img {
+    width: 375px;
+    padding-right: 20px;
+  }
+  .book-img a img{
+    width: 350px;
+  
+  }
+  .exclude {
+    top: -173px;
+    right: -6px;
+  }
+  .contact-img {
+    bottom: 95px;
+    left: -29px;
+  }
+}
