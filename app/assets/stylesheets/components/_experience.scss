@@ -1,27 +1,29 @@
 .oopspage {
   height: 100vh;
-  background-color:#423E3B;
+  // background-color:#423E3B;
   padding: 0;
+  text-align: center;
 }
 
+.ucpage {
+ width: 90%;
+ height: 90vh;
+}
 .homepagelink ul{
-  padding: 50px 0 0 50px;
+  padding: 20px 0 0 220px;
+  text-align: left;
+  font-weight: bold;
 }
 
 .homepagelink ul li {
   list-style: none;
 }
 
-.oops-message {
-  text-align: center;
-}
-
-.oops-message h2{
-  font-size: 100px;
-  text-align: left;
-  padding: 50px 0 50px 50px;
-}
-
-.oops-message h4{
-  font-size: 50px;
+.homepagelink ul li a {
+  color: #bebfc1;
+  &:hover {
+    color: #bebfc1;
+    text-decoration: none;
+    opacity: 0.7;
+  }
 }

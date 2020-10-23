@@ -10,7 +10,6 @@
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-weight: bold;
-  color: #F0FFF1;
 }
 
 .bttn1::before {
@@ -18,7 +17,6 @@
   position: absolute;
   right: -5%;
   bottom: -20%;
-  border: 4px solid black;
   width: 110%;
   height: 140%;
   z-index: 10;
@@ -27,15 +25,35 @@
 }
 
 .bttn1:hover {
-  color: #F0FFF1;
   text-decoration: none;
   border-radius: 0;
+}
+
+.btnmf {
+  color: #D5DAEB;
+  &:hover {
+    color: #D5DAEB;
+  }
+}
+
+.btnmf::before {
+  border: 4px solid #6874E7;
+}
+
+.btnbook {
+  color: #423E3B;
+  &:hover {
+    color: #423E3B;
+  }
+}
+
+.btnbook::before {
+  border: 4px solid #423E3B;
 }
 
 .bttn1:hover:before {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0 100%, 0 100%);
 }
-
 
 .hexagon {
   padding-top: 20px;
@@ -52,10 +70,4 @@
     text-decoration: none;
     color: #6874E7;
   }
-}
-
-@media(max-width: 520px) {
-  // .hexagon {
-  //   padding-right: 50px;
-  // }
 }
