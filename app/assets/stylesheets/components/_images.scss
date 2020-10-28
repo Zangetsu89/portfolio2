@@ -1,4 +1,4 @@
-.left-grid-img {
+.story-img {
   border: 3px solid #423E3B;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 100%);
 }
@@ -6,6 +6,11 @@
 .right-grid-img {
   border: 3px solid #D5DAEB;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0 80%, 0 100%);
+}
+
+.left-grid-img {
+  border: 3px solid #D5DAEB;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 80% 100%, 0 100%, 0 100%);
 }
 
 .grid-img {

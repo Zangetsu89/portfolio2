@@ -20,7 +20,7 @@
 .right-card-p {
   color: #D5DAEB;
   padding: 40px;
-  background-color: #423E3B;
+  background-color: #3c3b42;
   border-top: 5px solid  #D5DAEB;
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
   word-spacing: 5px;
@@ -60,7 +60,7 @@
   text-align: center;
   color: #D5DAEB;
   padding: 30px 0;
-  background-color: #373533;
+  background-color: #333337;
   &::after {
   content: "\f542";
   font-family: "Font Awesome 5 Free";
@@ -146,7 +146,7 @@
   bottom: 0;
   left: 0;
   height: 100%;
-  border: 5px solid #423E3B;
+  border: 5px solid #3c3b42;
   z-index: 10;
   width: 100%;
   color: rgb(122, 122, 122);
@@ -179,16 +179,16 @@
     
   }
   75% {
-    border: 5px solid #423E3B;
+    border: 5px solid #3c3b42;
   }
   100% {
     clip-path: polygon(0% 100%, 400% -500%, 0% 0%, -100% -100%);
-    border: 6px solid #423E3B;
+    border: 6px solid #3c3b42;
   }
 }
 
 .project-right-card {
-  background-color: #423E3B;
+  background-color: #3c3b42;
   position: relative;
   border: none;
   

@@ -1,0 +1,23 @@
+.skills ul li{
+  list-style: none;
+  padding: 30px;
+}
+
+.skills ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.skills img {
+  width: 50px;
+}
+
+.skills h3 {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.skills h3 span {
+  border-bottom: 3px solid black;
+}
