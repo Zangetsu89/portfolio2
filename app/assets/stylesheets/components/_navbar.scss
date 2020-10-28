@@ -98,3 +98,14 @@ svg{
 circle{
   transform-origin: 50% 50%;
 }
+
+@media(max-width: 1100px) {
+  .contact-img {
+    bottom: 50px;
+    left: -20px;
+  }
+}
+
+// setTimeout(() => {
+//       this.tl.reverse();
+//     }, 2500);

@@ -44,20 +44,52 @@
   
 // }
 
-@media(max-width: 1024px) {
-  .homepage-banner {
-    // height: 70vh;
+@media(max-width: 1100px) {
+  .homepage-banner h1 {
+    font-size: 80px;
+  }
+  .wrapper nav {
+    width: 17.5%;
   }
 }
 
 @media(max-width: 768px) {
-  .homepage-banner {
-    // height: 65vh;
+  .homepage-banner h1 {
+    font-size: 70px;
+  }
+  .wrapper nav {
+    width: 20.5%;
   }
 }
 
-@media(max-width: 520px) {
+@media(max-width: 720px) {
+  .homepage-banner h1 {
+    font-size: 60px;
+  }
+  .homepage-banner h3 {
+    font-size: 15px;
+  }
+  .wrapper nav {
+    width: 29.5%;
+    font-size: 15px;
+    height: calc(82vh - 3.4em);
+  }
+}
+
+@media(max-width: 540px) {
   .homepage-banner h1 {
     font-size: 40px;
+  }
+  .homepage-banner h3 {
+    font-size: 25px;
+  }
+  .wrapper nav {
+    width: 34.5%;
+  }
+}
+
+@media(max-width: 415px) {
+  .wrapper nav {
+    width: 100%;
   }
 }
