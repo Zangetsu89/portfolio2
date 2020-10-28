@@ -83,6 +83,7 @@ svg{
   padding: 0.4em;
   cursor: pointer;
   outline: none;
+  z-index: 100;
   &:hover {
     background: none;
   } 
@@ -106,6 +107,3 @@ circle{
   }
 }
 
-// setTimeout(() => {
-//       this.tl.reverse();
-//     }, 2500);
