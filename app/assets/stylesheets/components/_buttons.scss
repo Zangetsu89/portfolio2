@@ -65,6 +65,7 @@
   clip-path: polygon(0% 0%, 85% 0, 100% 30%, 100% 100%, 15% 100%, 0 70%);
   transition: clip-path 2s ease;
   overflow: initial;
+  z-index: 2;
   &:hover {
     clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%);
     text-decoration: none;
