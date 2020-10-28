@@ -229,6 +229,16 @@
   position: relative;
 }
 
+// @media(max-width: 415px) {
+//   .project-right-card, .project-right-card2, .project-right-card3 {
+//     width: 413px;
+//   }
+//   .project-right-card p {
+//     padding: 10px 215px 15px 10px;
+//   }
+// }
+
+
 @media(max-width: 520px) {
   .right-card-p {
     padding-right: 15px;
@@ -245,3 +255,4 @@
     padding: 10px 215px 15px 10px;
   }
 }
+

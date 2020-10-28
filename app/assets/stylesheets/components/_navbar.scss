@@ -26,6 +26,7 @@ svg{
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 2;
 }
 
 .wrapper {
@@ -33,6 +34,7 @@ svg{
   // overflow: hidden;
   top: 90px;
   right: 0;
+  z-index: 3;
   nav {
     width: 12.5%;
     float: right;
@@ -44,9 +46,11 @@ svg{
     padding: 20px;
     clip-path: url('#clipPath');
     // overflow: hidden;
+    z-index: 3;
     ul {
       list-style: none;
       padding: 0;
+      z-index: 3;
     
       li a {
         color: #696969;
@@ -55,6 +59,7 @@ svg{
         padding: 1rem 0;
         font-weight: bold;
         border-bottom: 3px solid black;
+        z-index: 5;
         &:hover {
           color: #bbb6b6;
         }
@@ -83,7 +88,7 @@ svg{
   padding: 0.4em;
   cursor: pointer;
   outline: none;
-  z-index: 100;
+  z-index: 102;
   &:hover {
     background: none;
   } 
@@ -107,6 +112,3 @@ circle{
   }
 }
 
-// setTimeout(() => {
-//       this.tl.reverse();
-//     }, 2500);

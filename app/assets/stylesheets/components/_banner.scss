@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.banner-container {
+  width: 768px;
+  margin: 0 auto;
+}
+
 .homepage-banner {
   // background-image:linear-gradient(135deg, rgba(0,0,0,0.1)0%, rgba(0,0,0,0.1)0%), url(https://res.cloudinary.com/dzvurrjbc/image/upload/v1600769468/man-standing-on-a-rock-1271619_eh8s6b.jpg);
   background: linear-gradient(180deg, #6874E7 0%, #000000 100%), #6874E7;
@@ -9,6 +14,7 @@
   height: 90vh;
   background-size: cover;
   position: relative;
+  z-index: 0;
 }
 
 .homepage-banner h1 {
@@ -20,6 +26,7 @@
   padding-top: 80px;
   padding-bottom: 20px;
   // color: #6874E7;
+  z-index: 1;
 }
 
 .homepage-banner h3 {

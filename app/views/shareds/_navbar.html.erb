@@ -39,7 +39,9 @@
 
   document.getElementById('open').addEventListener('mouseenter',() => {
     this.tl.play();
-    
+    setTimeout(() => {
+      this.tl.reverse();
+    }, 2500);
   })
 
   tl.from("nav", 1, {

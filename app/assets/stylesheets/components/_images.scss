@@ -26,6 +26,7 @@
   animation: image1 7s linear infinite;  position: absolute;
   bottom: 50px;
   left: 50px;
+  z-index: 4;
 }
 
 .img2 {
@@ -34,6 +35,7 @@
   position: absolute;
   top: 300px;
   left: 275px;
+  z-index: 4;
 }
 
 .img3 {
@@ -44,6 +46,7 @@
   bottom: 250px;
   left: 400px;
   border: 5px solid black;
+  z-index: 4;
 }
 
 .img4 {
@@ -54,6 +57,7 @@
   bottom: 250px;
   left: 400px;
   border: 5px solid black;
+  z-index: 4;
 }
 
 .img5 {
@@ -62,6 +66,7 @@
   position: absolute;
   top: 200px;
   right: 50px;
+  z-index: 4;
 }
 
 .img6 {
@@ -70,6 +75,7 @@
   position: absolute;
   top: 100px;
   right: 200px;
+  z-index: 4;
 }
 
 .img7 {
@@ -78,6 +84,7 @@
   position: absolute;
   bottom: 10px;
   right: 10px;
+  z-index: 4;
 }
 
 .img8 {
@@ -88,6 +95,7 @@
   bottom: 100px;
   right: 450px;
   animation-delay: 150ms;
+  z-index: 4;
 }
 
 .img9 {
@@ -97,6 +105,7 @@
   position: absolute;
   bottom: 100px;
   right: 450px;
+  z-index: 4;
 }
 
 .img10 {
@@ -106,6 +115,7 @@
   position: absolute;
   bottom: 125px;
   right: 650px;
+  z-index: 4;
 }
 
 .img11 {
@@ -115,6 +125,7 @@
   position: absolute;
   bottom: 125px;
   right: 650px;
+  z-index: 4;
 }
 
 .img12 {
@@ -124,6 +135,7 @@
   position: absolute;
   bottom: 125px;
   right: 650px;
+  z-index: 4;
 }
 
 .img13 {
@@ -132,6 +144,7 @@
   position: absolute;
   bottom: 50px;
   left: -50px;
+  z-index: 4;
 }
 
 .img14 {
@@ -140,6 +153,7 @@
   position: absolute;
   bottom: 200px;
   right: 200px;
+  z-index: 4;
 }
 
 .crosses {
@@ -404,6 +418,9 @@
     top: 180px;
     right: 110px;
   }
+  .homepagelink ul {
+    padding: 20px 0 0 20px;
+  }
 }
 
 @media(max-width: 325px) {
@@ -441,4 +458,8 @@
   bottom: 180px;
   left: 230px;
   }
+  .homepage-banner h1 {
+    z-index: 0;
+  }
+  
 }
