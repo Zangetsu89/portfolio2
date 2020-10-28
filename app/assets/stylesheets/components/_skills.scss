@@ -1,3 +1,7 @@
+.skills {
+  padding: 0;
+}
+
 .skills ul li{
   list-style: none;
   padding: 30px;
@@ -7,6 +11,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .skills img {
