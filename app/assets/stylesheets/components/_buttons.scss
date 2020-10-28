@@ -72,3 +72,22 @@
     color: #6874E7;
   }
 }
+
+@media(max-width: 325px) {
+  .bttn {
+    padding: 10px 8px;
+  }
+  .btnbook {
+    font-size: 14px;
+  }
+}
+
+@media(max-width: 415px) {
+  .btnbook {
+    padding: 10px 8px;
+  }
+  .exclude {
+    top: -146px;
+    right: -3px;
+  }
+}
