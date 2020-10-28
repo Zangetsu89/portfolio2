@@ -405,3 +405,40 @@
     right: 110px;
   }
 }
+
+@media(max-width: 325px) {
+  .grid-img img{
+    width: 295px;
+  }
+  .book-img {
+    width: 320px;
+    padding-right: 20px;
+  }
+  .book-img a img{
+    width: 295px;
+  }
+  .img10, .img11, .img12 {
+    bottom: 10px;
+    left: 125px;
+  }
+  .exclude {
+    top: -233px;
+    right: 0px;
+  }
+  #open {
+    margin: 0;
+  }
+  .project-right-card {
+    width: 320px;
+  }
+  .bttn {
+    padding: 10px 8px;
+  }
+  .project-right-card p {
+    padding: 10px 284px 15px 10px;
+  }
+  .img3, .img4 {
+  bottom: 180px;
+  right: 55px;
+  }
+}

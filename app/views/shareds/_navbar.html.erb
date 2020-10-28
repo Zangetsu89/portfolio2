@@ -39,9 +39,7 @@
 
   document.getElementById('open').addEventListener('mouseenter',() => {
     this.tl.play();
-    setTimeout(() => {
-      this.tl.reverse();
-    }, 2500);
+    
   })
 
   tl.from("nav", 1, {
@@ -54,7 +52,7 @@
   tl.to("circle.one", 3,{
     scale: 1,
     x: 0,
-    y: -1300,
+    y: -1100,
     ease: Power2.easeOut
   }, "-=1");
   tl.to("circle.two", 4,{
