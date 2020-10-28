@@ -90,6 +90,13 @@
 
 @media(max-width: 415px) {
   .wrapper nav {
-    width: 100%;
+    width: 105%;
+    height: calc(81vh - 3.4em);
+  }
+  .wrapper {
+    top: 58px;
+  }
+  #open {
+    margin: 0;
   }
 }

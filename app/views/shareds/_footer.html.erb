@@ -3,22 +3,26 @@
     <h2><span class="footer-header">Contact</span></h2>
     <div class="footer-titles">
       <ul>
-        <li><i class="fab fa-github-square"></i> GitHub</li>
-        <li><i class="far fa-envelope"></i> E-mail</li>
-        <li><i class="fab fa-linkedin"></i> LinkedIn</li>
-      </ul>
-    </div>
-    <div class="footer-details">
-      <ul>
         <%= link_to "https://github.com/Zangetsu89", target: "_blank" do %>
-          <li class="github">github.com/Zangetsu89 <i class="fas fa-external-link-alt"></i></li>
+          <li><i class="fab fa-github-square"></i> GitHub</li>
         <% end %>
-        <li class="email">essam_d@hotmail.com</li>
+        <li><i class="far fa-envelope"></i> E-mail</li>
         <%= link_to "https://www.linkedin.com/in/essam-dawood-a522a041/", target: "_blank" do %>
-          <li class="linkedin">linkedin.com/in/essam-dawood <i class="fas fa-external-link-alt"></i></li>
-        <% end %>
+          <li><i class="fab fa-linkedin"></i> LinkedIn</li>
+        <% end %>  
       </ul>
     </div>
+    <%# <div class="footer-details">
+      <ul>
+        <%= link_to "https://github.com/Zangetsu89", target: "_blank" do 
+          <li class="github">github.com/Zangetsu89 <i class="fas fa-external-link-alt"></i></li>
+        <% end 
+        <li class="email">essam_d@hotmail.com</li>
+        <%= link_to "https://www.linkedin.com/in/essam-dawood-a522a041/", target: "_blank" do 
+          <li class="linkedin">linkedin.com/in/essam-dawood <i class="fas fa-external-link-alt"></i></li>
+        <% end 
+      </ul>
+    </div> %>
     <%= image_tag "contact.svg", class: "contact-img" %>
   </div>
 </div>
