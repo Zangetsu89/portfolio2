@@ -5,7 +5,6 @@
 @import "logo";
 @import "banner";
 @import "buttons";
-@import "search";
 @import "cards";
 @import "grid";
 @import "images";
@@ -15,4 +14,12 @@
 @import "skills";
 body ul {
   margin: 0;
+}
+
+:root {
+  --primary:#6874E7;
+  --light: #D5DAEB;
+  --light-dark: #3c3b42;
+  --dark: #333337;
+  --black: black;
 }

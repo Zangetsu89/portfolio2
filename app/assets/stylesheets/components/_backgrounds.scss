@@ -1,22 +1,22 @@
 .projects-background {
-  background-color: #333337;
+  background-color: var(--dark);
   padding: 20px 0;
 }
 
 .story-background {
-  background-color: #D5DAEB;
+  background-color: var(--light);
   padding: 20px 0; 
 }
 
 .projects-background2 {
-  background-color: #3c3b42;
+  background-color: var(--light-dark);
   padding-bottom: 25px;
 }
 
 .footer-background {
-  background: #333337;
+  background: var(--dark);
   position: relative;
-  color: #D5DAEB;
+  color: var(--light);
   padding-bottom: 30px;
 }
 
@@ -29,5 +29,5 @@
 }
 
 .skills-background {
-  background-color: #D5DAEB;
+  background-color: var(--light);
 }
