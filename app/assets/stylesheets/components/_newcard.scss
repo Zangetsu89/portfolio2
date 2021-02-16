@@ -1,0 +1,39 @@
+.cardbg {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.newcard {
+  width: 350px;
+  padding-bottom: 20px;
+  margin: 20px 0;
+  background-color: var(--light);
+  &:hover {
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.75);
+    transform: scale(1.01);
+  }
+}
+
+.newcardlink{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cardbody h3{
+  padding: 20px 20px 0 20px;
+}
+
+.cardbody p{
+  padding: 20px 20px;
+  border-left: 3px solid black;
+  margin-left: 20px;
+}
+
+.newcard a {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}

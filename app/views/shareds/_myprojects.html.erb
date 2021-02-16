@@ -1,35 +1,39 @@
 <div class="projects-background2">
-<h2>My Projects</h2>
-<div class="my-grid2 container">
+<h2><span>My Projects</span></h2>
+  <div class="container">
+    <h4></h4>
+    <%= render "shareds/cards" %>
+  </div>
+<%# <div class="my-grid2 container">
   <div class="left-card">
     <h4>Moveable Feasts</h4>
     <div class="left-card-p">
      <p>Moveable Feasts was my graduation project. This app acts as a new social connector for hosts and guests to create frienships in more intimate settings through dinner parties.<br>This app is based on the MVC pattern and the coding languages used are: <span class="icons"><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i></span>, Ruby as a backend language using the Ruby on Rails framework and SQL for the Database using Active Record library. The maps used are from Mapbox. Cloudinary was used to save the uploaded images. The fonts used are (of course) from Google fonts.</p>
     </div>
-    <div>
-    <%= image_tag 'Exclude.svg', width: "470px", height: "530px", class: "exclude" %>
-    </div>
-    <div class = "left-card-link">
-    <%= link_to "Check it out", "https://www.moveablefeasts.club/", class: "bttn bttn1 btnmf", target: "_blank" %>
-  </div>
+    <div> %>
+    <%# <%= image_tag 'Exclude.svg', width: "470px", height: "530px", class: "exclude" %>
+    <%# </div>
+    <div class = "left-card-link"> %>
+    <%# <%= link_to "Check it out", "https://www.moveablefeasts.club/", class: "bttn bttn1 btnmf", target: "_blank" %>
+  <%# </div>
   </div>
   <div class="right-grid-img">
-    <div class="grid-img">
-    <%= link_to "https://www.moveablefeasts.club/", target: "_blank" do %>
-      <%= image_tag "MF.PNG", width: "370px", height: "500px" %>
-    <% end %>
-    </div>
+    <div class="grid-img"> %>
+    <%# <%= link_to "https://www.moveablefeasts.club/", target: "_blank" do %>
+      <%# <%= image_tag "MF.PNG", width: "370px", height: "500px" %>
+    <%# <% end %> 
+    <%# </div>
   </div>
 </div>
 </div>
 <div class="projects-background">
 <div class="my-grid container">
   <div class="left-grid-img">
-    <div class="grid-img">
-      <%= link_to "http://bookbookborrow.herokuapp.com/", target: "_blank" do %>
-        <%= image_tag "BB.PNG", width: "370px", height: "470px" %>
-      <% end %>
-    </div>
+    <div class="grid-img"> %>
+      <%# <%= link_to "http://bookbookborrow.herokuapp.com/", target: "_blank" do %> 
+        <%# <%= image_tag "BB.PNG", width: "370px", height: "470px" %>
+      <%# <% end %> 
+    <%# </div>
   </div>
   <div class="project-right-card">
     <div class="project-right-card2">
@@ -39,12 +43,12 @@
           <p>Book Borrow is an app that enables you to borrow and lend out books.<br>Do you have a title you would love to read but you'd rather not buy?<br>
           The idea behind it is to create an intellectual atmospher where people can find and offer books and maybe even create new friendships.
           </p>
-          <div class = "project-card-link">
-              <%= link_to "Check it out", "http://bookbookborrow.herokuapp.com/", class: "bttn bttn1 btnbook", target: "_blank" %>
-            </div>
+          <div class = "project-card-link"> %>
+              <%# <%= link_to "Check it out", "http://bookbookborrow.herokuapp.com/", class: "bttn bttn1 btnbook", target: "_blank" %>
+            <%# </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</div> %>
 </div>
