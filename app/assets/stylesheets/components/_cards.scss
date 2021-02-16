@@ -1,12 +1,15 @@
 .right-card {
   padding-top: 15px;
-  background-color: #6874E7;
+  background-color: var(--gray);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%, 0 83%, 0 100%);
 }
 
 .right-card h2, .right-card h4 {
   text-align: left;
   padding-left: 20px;
+}
+.right-card h2 span {
+  border-bottom: 3px solid var(--dark);
 }
 
 .lewagon {
@@ -18,17 +21,16 @@
 }
 
 .right-card-p {
-  color: #D5DAEB;
+  color: var(--dark);
   padding: 40px;
-  background-color: #3c3b42;
-  border-top: 5px solid  #D5DAEB;
+  background-color: var(--light);
   clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 25%);
   word-spacing: 5px;
   letter-spacing: 1px;
   position: relative;
   overflow: hidden;
   z-index: 2;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .story-strong {
@@ -41,7 +43,7 @@
   content: "";
   width: 75px;
   height: 75px;
-  background-color: #6874E7;
+  background-color: var(--gray);
   bottom: -4rem;
   z-index: 100;
 }
@@ -58,9 +60,9 @@
 
 .projects-background2 h2{
   text-align: center;
-  color: #D5DAEB;
+  color: var(--dark);
   padding: 30px 0;
-  background-color: #333337;
+  background-color: var(--gray);
   &::after {
   content: "\f542";
   font-family: "Font Awesome 5 Free";
@@ -68,6 +70,10 @@
   margin: 10px;
   font-size: 26px;
 }
+}
+
+.projects-background2 h2 span {
+  border-bottom: 3px solid var(--dark);
 }
 
 .left-card {

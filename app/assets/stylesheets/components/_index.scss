@@ -12,6 +12,8 @@
 @import "footer";
 @import "experience";
 @import "skills";
+@import "newcard";
+
 body ul {
   margin: 0;
 }
@@ -22,4 +24,5 @@ body ul {
   --light-dark: #3c3b42;
   --dark: #333337;
   --black: black;
+  --gray: #c9cde0;
 }
