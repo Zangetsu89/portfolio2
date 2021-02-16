@@ -38,11 +38,11 @@ svg{
   nav {
     width: 12.5%;
     float: right;
-    background-color:black;
+    background-color:var(--black);
     height: calc(88vh - 3.4em);
     font-size: 1.4em;
     line-height: 1.5em;
-    color: black;
+    color: var(--black);
     padding: 20px;
     clip-path: url('#clipPath');
     // overflow: hidden;
@@ -58,7 +58,7 @@ svg{
         display: block;
         padding: 1rem 0;
         font-weight: bold;
-        border-bottom: 3px solid black;
+        border-bottom: 3px solid var(--black);
         z-index: 5;
         &:hover {
           color: #bbb6b6;
@@ -67,11 +67,11 @@ svg{
     }
     p {
       color: #696969;
-      border-bottom: 3px solid #6874E7;
-      border-top: 3px solid #6874E7;
+      border-bottom: 3px solid var(--primary);
+      border-top: 3px solid var(--primary);
     }
     .ps {
-      color: #6874E7;
+      color: var(--primary);
     }
   }
 }
@@ -84,7 +84,7 @@ svg{
   font-size: 1.4em;
   background: none;
   border: none;
-  color: black;
+  color: var(--black);
   padding: 0.4em;
   cursor: pointer;
   outline: none;

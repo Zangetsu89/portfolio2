@@ -3,13 +3,14 @@
 }
 
 .footer-header {
-  border-bottom: 3px solid #6874E7;
+  border-bottom: 3px solid var(--primary);
 }
 
 .contacts h2 {
   text-align: center;
   padding: 30px 0;
 }
+
 .footer-titles ul {
   display: flex;
   justify-content: space-around;
@@ -24,15 +25,8 @@
 
 .fa-envelope, .fa-github-square, .fa-linkedin {
   font-size: 20px;
-  color: #6874E7;
+  color: var(--primary);
 }
-
-// .footer-details ul {
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
-//   padding: 0;
-// }
 
 .email, .github, .linkedin {
  list-style: none;
@@ -42,25 +36,20 @@
 
 .footer-titles a {
   text-decoration: none;
-  color: #D5DAEB;
+  color: var(--light);
   &:hover {
     opacity: 0.7;
-    color: #D5DAEB;
+    color: var(--light);
   }
 }
 
 @media(max-width: 520px) {
   .footer-titles ul li {
     font-size: 14px;
-    
   }
   .fa-envelope, .fa-github-square, .fa-linkedin {
     font-size: 12px;
   }
-  // .footer-details {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
   .email, .github, .linkedin {
     font-size: 10px;
   }
