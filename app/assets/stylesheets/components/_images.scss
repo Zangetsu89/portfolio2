@@ -121,6 +121,7 @@
   bottom: 125px;
   right: 650px;
   z-index: 4;
+  overflow: hidden;
 }
 
 .img11 {
@@ -131,6 +132,7 @@
   bottom: 125px;
   right: 650px;
   z-index: 4;
+  overflow: hidden;
 }
 
 .img12 {
@@ -141,6 +143,7 @@
   bottom: 125px;
   right: 650px;
   z-index: 4;
+  overflow: hidden;
 }
 
 .img13 {
@@ -379,6 +382,9 @@
 }
 
 @media(max-width: 520px) {
+  body{
+    overflow-x: hidden;
+  }
   .grid-img img{
     width: 340px;
   }
@@ -429,6 +435,9 @@
 }
 
 @media(max-width: 325px) {
+  body{
+  overflow-x: hidden;
+  }
   .grid-img img{
     width: 295px;
   }
