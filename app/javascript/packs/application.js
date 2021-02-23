@@ -23,10 +23,13 @@ require("channels")
 // ----------------------------------------------------
 
 // External imports
-import "bootstrap";
+// import "bootstrap";
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
+import { init } from '../components/canvas';
+import { animate } from '../components/canvas';
+import { connect } from '../components/canvas';
 
 // Typed.js 
 import { loadDynamicBannerText } from '../components/banner';
@@ -35,5 +38,8 @@ document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   loadDynamicBannerText();
+  init();
+  animate();
+  connect();
 });
 
